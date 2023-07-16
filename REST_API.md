@@ -1,6 +1,7 @@
 # REST API docs
 
 This is small API for testing. This API works for e-courses site. <br>
+!This file shouldn't be edited, it serves as a measure of API correctness!
 
 route: / <br>
 description: route used to retrieve info about courses available.
@@ -19,7 +20,7 @@ returns:
 <br>
 route: /login <br>
 description: <br>
-gets: <br>
+gets: [username, password]<br>
 method: POST <br>
 returns:
 <pre>
