@@ -12,12 +12,5 @@ This repository is created for QA training. You can check out tasks in Tasks.md 
 4. Test it!
 
 
-## for frontend
-
-1. First install <a href='https://nodejs.org/en/download'>nodejs</a> and <a href='https://classic.yarnpkg.com/en/docs/install#debian-stable'>yarn</a>
-2. Navigate to frontend folder and enter command to install all dependecies: <code>yarn install</code>
-3. After installation type: <code>yarn start</code> and navigate to url provided in shell
-4. Test it!
-
 
 
