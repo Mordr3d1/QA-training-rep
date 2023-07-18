@@ -20,6 +20,7 @@ Methods:
             "gamedev"
         ]
     }
+
 Error: Incorrect courses data, absence of a "fullstack" course in list of courses 
 
 _Solution: Add "fullstack" course to [backend/app.py] section app.get, 'data = {"courses":..'}_ 
