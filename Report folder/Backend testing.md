@@ -41,11 +41,13 @@ _Solution: Add "fullstack" course to [backend/app.py] section app.get, 'data = {
     {
       null
     }
+
 Error: The answer in case of failure does not correspond to the technical task:
     
     {
       "message": "username or password incorrect"
     }
+
 _Solution: Add if condition to the main file [backend/app.py], section app.post(/login)_
 
 - Get Request
