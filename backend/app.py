@@ -16,7 +16,7 @@ async def add_cors_header(request, call_next):
 
 @app.get("/")
 async def index():
-    data = {"courses": ["frontend", "backend", "gamedev"]}
+    data = {"courses": ["frontend", "backend", "gamedev", "fullstack"]}
     return data
 
 @app.post("/login")
@@ -28,6 +28,8 @@ async def login(request: Request):
     user_logging = await request.json()
     if user == user_logging:
         return {"message":"you've logged in"}
+    else:
+        return {"message": "username or password incorrect"}
 
 @app.get("/registration")
 async def reg(request: Request):
@@ -60,6 +62,6 @@ async def save_user_courses(username: str, request: Request):
         return {"message": f"User {username} courses saved successfully."}
 
     except ValueError:
-        return {"message": "error"}
+        return {"message": "Invalid JSON payload."}
 
 

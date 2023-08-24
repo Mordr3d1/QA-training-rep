@@ -2,6 +2,12 @@
 
 ## Rest_API testing
 
+## Short project description
+
+
+**The following report contains the results of API testing using Postman, SoupUI tools, and designed to identify and correct various types of errors as well as suggestions for their correction**
+
+
 ###  1. Postman
 
 Methods:
@@ -48,7 +54,7 @@ Error: The answer in case of failure does not correspond to the technical task:
       "message": "username or password incorrect"
     }
 
-_Solution: Add if condition to the main file [backend/app.py], section app.post(/login)_
+_Solution: Add else condition to the main file [backend/app.py], section app.post(/login)_
 
 - Get Request
 
@@ -79,9 +85,9 @@ _Remark: This request works correctly, according to the technical task_
 
   returns:
 
-        {
-    "message": "User joe courses saved successfully."
-        }
+      {
+      "message": "User joe courses saved successfully."
+      }
 
 if fails, returns: if course list empty:
 
@@ -104,3 +110,17 @@ Error: Incorrect error message (If json error)
 _Solution: Correct the error  message in [backend/app.py], section @app.post("/user/{username}/courses/add")_
 
 "message": "Invalid JSON payload."
+
+### 2.Soup
+
+Conclusion: same problems
+
+Solutions: Suggested above
+
+
+##  Conclusion of testing
+
+- Mid-level tools for working with API clients were used for testing (Postman,SoapUI)
+
+- Bugs found as a result of testing have been fixed
+
