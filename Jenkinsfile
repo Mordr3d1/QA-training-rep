@@ -11,6 +11,7 @@ pipeline {
 '''
         sh 'pip install fastapi'
         sh 'pip install "uvicorn[standard]'
+        sh 'sudo su'
       }
     }
 
