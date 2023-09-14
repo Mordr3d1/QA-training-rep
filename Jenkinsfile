@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {
         git(url: 'https://github.com/Mordr3d1/QA-training-rep', branch: 'main')
-        sh 'python3 pytest'
+        sh 'pytest'
       }
     }
 
