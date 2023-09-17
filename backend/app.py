@@ -31,7 +31,7 @@ async def login(request: Request):
     else:
         return {"message": "username or password incorrect"}
 
-@app.get("/registration")
+@app.post("/registration")
 async def reg(request: Request):
     new_user = await request.json()
     required_fields = ["username", "password"]
