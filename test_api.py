@@ -1,4 +1,4 @@
-from fastapi.testclient import TestClient
+from starlette.testclient import TestClient as TestClient
 from backend.app import app
 
 client = TestClient(app)
