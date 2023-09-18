@@ -25,7 +25,7 @@ def test_login_route():
 
 def test_registration_route():
     payload = {
-        "username": "joe",
+        "username": "joe1",
         "password": "12345678",
         "e-mail": "joe@doe.com"
 }
