@@ -13,7 +13,7 @@ def test_courses():
 def test_login_route():
 
     payload = {
-        "username":"joe1",
+        "username":"joe",
         "password":"12345678"
     }
     response = client.post("/login", json=payload)
